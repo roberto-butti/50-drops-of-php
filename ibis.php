@@ -16,7 +16,9 @@ return [
      */
     'fonts' => [
                 'literata' => 'Literata-Regular.ttf',
-                //'times' => 'times-regular.ttf',
+                'times' => 'Merriweather-Regular.ttf',
+                'handwriting' => 'DancingScript-Regular.ttf',
+                'monospaced' => "RobotoMono-Regular.ttf",
     ],
 
     /**
