@@ -15,7 +15,7 @@ return [
      * The list of fonts to be used in the different themes.
      */
     'fonts' => [
-                //'calibri' => 'Calibri-Regular.ttf',
+                'literata' => 'Literata-Regular.ttf',
                 //'times' => 'times-regular.ttf',
     ],
 
