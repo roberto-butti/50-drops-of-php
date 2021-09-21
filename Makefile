@@ -22,7 +22,7 @@ ${HTML}: ${SRCS}
 buildpdf: ${OUTPUT} ## build PDF file
 	@echo "Going to build" ${OUTPUT}
 
-${OUTPUT}: ${SRCS}
+${OUTPUT}: ${SRCS} ibis.php assets/*.html
 	@echo "Creating PDF..."
 	../../OPEN-SOURCE/ibis/ibis build
 
