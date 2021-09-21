@@ -35,9 +35,9 @@ open:
 
 
 phpcs: ## phpcs
-	vendor/bin/phpcs -n --standard=PSR12 src
+	phpcs -n --standard=PSR12 examples
 phpcbf:## phpcbf
-	vendor/bin/phpcbf --standard=PSR12 src
+	phpcbf --standard=PSR12 examples
 
 listtodo: ## list TODO
 	@cat todo.md | grep "^\-\ \["
