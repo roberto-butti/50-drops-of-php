@@ -54,13 +54,13 @@ return [
      */
     'sample' => [
         [1, 3],
-        [80, 85],
-        [100, 103],
+        [20, 23],
+        
     ],
 
     /**
      * A notice printed at the final page of a generated sample.
      */
-    'sample_notice' => 'This is a sample from "Laravel Queues in Action" by Mohamed Said. <br>
-                        For more information, <a href="https://www.learn-laravel-queues.com/">Click here</a>.',
+    'sample_notice' => 'This is a sample from "50 drops of PHP" by Roberto Butti. <br>
+                        For more information, <a href="https://hi-folks.dev/">Click here</a>.',
 ];
