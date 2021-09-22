@@ -1,4 +1,3 @@
-
 ## Display OS information: php_uname()
 Display some information about the operating system.
 

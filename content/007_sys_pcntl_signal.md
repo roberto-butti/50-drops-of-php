@@ -1,4 +1,4 @@
-## pcntl_signal()
+## Listening signals: pcntl_signal()
 
 One of the methods used by to operating system to communicate with the running processes is through _signals_.
 The operating system uses _signals_ to communicate to the processes something like: "I want to stop your execution."
