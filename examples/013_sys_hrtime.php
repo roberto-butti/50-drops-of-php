@@ -1,7 +1,5 @@
 <?php
 
-
-
 // Calling hrtime with no parameter ("false" is the default),
 // it returns an array of integers in the form [seconds, nanoseconds]
 $monotonictime = hrtime();
