@@ -1,4 +1,5 @@
 <?php
+
 $tmpDirectory = sys_get_temp_dir();
 echo "Temp directory: " . $tmpDirectory . PHP_EOL;
 if (is_dir($tmpDirectory)) {
