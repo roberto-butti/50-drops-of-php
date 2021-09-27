@@ -1,9 +1,5 @@
-# Array
-
 ## Apply function to each array elements: array_map()
-
-Suppose that you have an array.
-Suppose that you want to apply some logic for each element.
+If you want to apply some logic (function) for each element of an array, you may use *array_map()* function.
 You will have as result a new array with the same length with the new elements.
 You can use *array_map()*, the first parameter is the function name and the second parameter is the array to apply the function defined.
 It returns a new array that is the result of the function defined as first parameter.
