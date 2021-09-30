@@ -1,4 +1,4 @@
-## join()
+## A string from an array:  join()
 
 If you need to create a string starting from an array you can use _join()_ function.
 For example:
@@ -10,19 +10,24 @@ The separator my be a string (or just one character).
 
 If you have an array of chars and you want to obtain a string with "-" as separator:
 ```php
-join("-", ["a", "b", "c"]); // "a-b-c"
+$string = join("-", ["a", "b", "c"]); // "a-b-c"
 ```
+You can use also a string as separator:
+```php
+$string = join("--", ["aa", "bb", "cc"]); // "aa--bb--cc"
+```
+
 If you have an array of strings and you want to obtain a string with " " as separator:
 ```php
-join(" ", ["How", "are", "you", "?"]); // "How are you ?"
+$string = join(" ", ["How", "are", "you", "?"]); // "How are you ?"
 ```
 You can _join_ not just strings but numbers and booleans:
 ```php
-join("_", ["a", 1, true]); // "a_1_1"
+$string = join("_", ["a", 1, true]); // "a_1_1"
 ```
 
 You can avoid to define the separator, in this case join() will concatenate the elements of array
 ```php
-join(["a", "b", "c"]); // "abc"
+$string = join(["a", "b", "c"]); // "abc"
 ```
 
