@@ -1,3 +1,5 @@
+# Array
+
 ## Apply function to each array elements: array_map()
 If you want to apply some logic (function) for each element of an array, you may use *array_map()* function.
 You will have as result a new array with the same length with the new elements.
