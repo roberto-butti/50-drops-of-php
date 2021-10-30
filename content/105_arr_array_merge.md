@@ -1,0 +1,3 @@
+## Merge two arrays: array_merge()
+
+The *array_merge()* function...
