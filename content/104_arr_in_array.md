@@ -12,6 +12,7 @@ $inArray = in_array( $elementToFind, $array); // the $elementToFind is in the $a
 ### Strict comparison
 By default the behaviour is to perform a "loose strict" comparison.
 It means that, for example true and 1 is considered as "equals".
+Why? PHP is
 It is the same when you perform a loose comparisons with *==*, for example: *(true == 1)* (is true). If you want a strict comparison you need to use *===*, for example *(true === 1)* (is false). For *in_array()* function, you have the third optional parameter *$strict* to define that you want a strict comparison (loose comparison is the default behaviour). 
 
 | First | Second      | Strict comparison | No strict comparison |
