@@ -70,3 +70,77 @@ Array
 */
 ```
 
+If you are using strings instead of single char, just the first char of the string will be considered:
+
+```php
+$a = range('anaconda','elephant');
+print_r($a);
+/*
+Array
+(
+    [0] => a
+    [1] => b
+    [2] => c
+    [3] => d
+    [4] => e
+)
+*/
+```
+
+If you want to generate an array with 'A'..'Z' and 'a'..'z' you can't use *range('A','z')* because range for chars, follow the ascii table. In the middle, between upper case and lower case , in the ascii table you have some chars *[\]^_`* instead probably you could use:
+
+```php
+$a = array_merge(range('A','Z'), range('a','z'));
+```
+
+You can also use float. In this case every number of the sequence is the increment (by 1.0) of the previous one:
+
+```php
+$a = range(1.5, 4.45);
+print_r($a);
+/*
+Array
+(
+    [0] => 1.5
+    [1] => 2.5
+    [2] => 3.5
+)
+*/
+```
+
+### Step
+
+The third parameters (optional, the default is 1) determines the increment for each elements. For example if you want generate odd number in the range 1..10:
+
+```php
+$a = range(1,10,2);
+print_r($a);
+/*
+Array
+(
+    [0] => 1
+    [1] => 3
+    [2] => 5
+    [3] => 7
+    [4] => 9
+)
+*/
+```
+
+The step parameter can be negative:
+
+```php
+$a = range(10,1,-2);
+print_r($a);
+/*
+Array
+(
+    [0] => 10
+    [1] => 8
+    [2] => 6
+    [3] => 4
+    [4] => 2
+)
+*/
+```
+
