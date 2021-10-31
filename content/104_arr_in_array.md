@@ -41,9 +41,9 @@ in_array(array(), $array); // true, because the second element false
 ```
 
 ### Case Sensitive
-The *in_array()* function is case sensitive, it means that the comparison for each elements is case sensitive: "My Test" and "my tesT" are different because the case of the first letter of each word and the latest one.
+The *in_array()* function is case sensitive, it means that: "My Test" and "my tesT" are different because the case of the first letter of each word and the latest one.
 
-In order to obtain a way to perform a case insesitive comparison is to use *strtolower* "for each element of the array".
+In order to obtain a way to perform a case insensitive comparison is to use *strtolower()* "for each element of the array".
 "For each element of the array" is obtained thanks to the *array_map* function. The *array_map* function, applies a function to each element of the array. In this case the function is *strtolower()*
 
 ```php
