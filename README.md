@@ -1,6 +1,6 @@
 # The Book: 50 drops of PHP
 
-![50 drops of PHP book](assets/cover.png)
+![50 drops of PHP book](assets/social_cover-50-drops-of-php-book.png)
 
  This book collects some useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
 
