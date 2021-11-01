@@ -1,0 +1,2 @@
+## gzcompress()
+ **TODO**

@@ -1,6 +1,14 @@
 # Welcome to 50 drops of PHP
 
-## Why
-This **book** collects some useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
+## The reason why
+This book collects some useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
 
->{quote}  This book isn't a tutorial about writing PHP app, it's more a list of hint/functions
+This book will show you 50 features that are typically underused or underrated.
+
+Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core is lost.
+
+
+
+
+
+>{quote}  This book aims to discover some nice PHP hints/functions, however isn't a tutorial about writing PHP app.
