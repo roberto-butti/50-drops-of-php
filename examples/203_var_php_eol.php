@@ -1,3 +1,9 @@
 <?php
 
-// [TODO]
+$lines = [
+    "Title",
+    "Subtitle",
+    "Description",
+    ""
+];
+echo implode(PHP_EOL, $lines);
