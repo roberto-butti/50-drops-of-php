@@ -1,4 +1,4 @@
-.PHONY = all clean build buildhtml buildpdf phpcs
+.PHONY = all clean build buildhtml buildpdf phpcs toc
 
 SRCS := content/*.md
 OUTPUT := export/50-drops-of-php-light.pdf
@@ -41,3 +41,6 @@ phpcbf:## phpcbf
 
 listtodo: ## list TODO
 	@cat todo.md | grep "^\-\ \["
+
+toc: ## Generating TOC from content files
+	@cat content/*.md | grep ^\#  | sed  's/^# /- /g' | sed  's/^## /    - /g' | sed 's/^### /        - /g'
