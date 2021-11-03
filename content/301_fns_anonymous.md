@@ -2,43 +2,66 @@
 
 ## Anonymous functions
 
-You can assign a function to a variable.
-This function has not a name.
-It is useful on some use cases for example when you need to pass a function to another function as value.
-### The simplest use case
-- You can define an anonymous function that has 2 input parameter $x and $y;
-- The function returns the sum of $x and $y;
-- The function is assigned to $sum variable;
-- You can call the function via the variable $sum.
+Usually in PHP in order to reuse code and logic you can use functions. A classical declaration of function is something like this:
 
 ```php
-$sum = function($x, $y)
-{
+// Define a classical function
+function sum($x, $y) {
+    return $x + $y;
+}
+// call the sum function
+echo "Calling sum(5, 3) function: " . sum(5, 3)  . PHP_EOL;
+echo "Calling sum(1, 2) function: " . sum(1, 2)  . PHP_EOL;
+```
+
+In this example with the "classic declaration of fuction", you have the keyword *function*, then the name of the function (in this case *sum*) and then the parameters (in this case *$x* and *$y*). The name is importante because, later, when you need to "call" the function you need to use the name (for example *sum(5,3)*).
+
+Anonymous functions are functions without a name. You can declare in this way:
+
+```php
+// Define anonymous function, and assign it to the $sum variable
+$sum = function ($x, $y) {
     return $x + $y;
 };
 
-echo $sum(5,3) . PHP_EOL;
-echo $sum(1,2) . PHP_EOL;
+// Call the anonymous function via variable $sum
+echo "Calling anonymous function: " . $sum(5, 3) . PHP_EOL;
+echo "Calling anonymous function: " . $sum(1, 2) . PHP_EOL;
 ```
 
-### Another example
+The function has not a name but it is assigned to a variable, in this case *$sum*.
+
+Probably, it may seem a little strange the way you call the anonymous function , it is a mix of using variables *$sum* and define parameters *(5, 3)* .
+
+But why do you need anonymous function? Or better, when do you need to use anonymous function?
+
+Suppose that you have a function that:
+
+- generates a first random number (1..10);
+- generates a second random number (1..10);
+- applies a function to these two number. The function that you can apply is something that you can pass as parameter and perform an operation with these two numbers and returns a result.
 
 ```php
-$double = function($x)
-{
-    return $x * 2;
+$sum = function ($x, $y) {
+    return $x + $y;
 };
-
-echo $double(5) . PHP_EOL;
-echo $double(7) . PHP_EOL;
+$mul = function ($x, $y) {
+    return $x * $y;
+};
+function apply($func) {
+    $a = rand(1,10);
+    $b = rand(1,10);
+    return $func($a, $b);
+}
+echo "APPLY sum : " . apply($sum) . PHP_EOL;
+echo "APPLY mul : " . apply($mul) . PHP_EOL;
 ```
 
-### Apply an anonymous function as a function parameter
+If you declare your *sum* function as anonymous you can assign it to a variable *$sum* and you can passthat function to the *apply* function.
 
-Some functions require a function as parameter.
-For example
-- array_map: you need to set a function to apply to each array elements;
-- array_walk: send the couple key/value of array elements to a function;
+### An example with a PHP core function
+
+Some PHP core function, requires a function as parameter. For example *array_map* requires  to set a function to apply to each array elements:
 
 ```php
 $a = array_map(function($item) {
@@ -47,22 +70,19 @@ $a = array_map(function($item) {
 print_r($a);
 ```
 
-### Refactor a callback with anonymous function
+In this case you can refactor, declaring a variable *$double* and assign the function that doubles the argument.
 
 ```php
-function shutdown() {
-    echo 'Shutting down.', PHP_EOL;
-}
-register_shutdown_function("shutdown");
-exit("Good bye!");
+$a = [1, 2, 3, 4, 5];
+$double = function ($x) {
+    return $x * 2;
+};
+$b = array_map(
+    $double,
+    $a
+);
+print_r($b); // [2,4,6,8,10]
 ```
 
 
 
-```php
-register_shutdown_function(function () {
-    echo 'Shutting down.', PHP_EOL;
-});
-
-exit("Good bye!");
-```
