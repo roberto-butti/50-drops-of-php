@@ -26,6 +26,10 @@ ${OUTPUT}: ${SRCS} ibis.php assets/*.html
 	@echo "Creating PDF..."
 	../../OPEN-SOURCE/ibis/ibis build
 
+buildsample: ## build sample PDF file
+	@echo "Creating PDF sample..."
+	../../OPEN-SOURCE/ibis/ibis sample
+
 clean:
 	@echo "Cleaning up..."
 	@echo "removing (dry run) " ${OUTPUT}
