@@ -53,16 +53,15 @@ Table of Content
     - Get variable type: gettype()
     - Portable directory separator: DIRECTORY_SEPARATOR
     - Portable end of line: PHP_EOL()
-    - get_object_vars()
+    - Export object properties as array: get_object_vars()
+- Functions
     - Anonymous functions
-        - The simplest use case
-        - Another example
-        - Apply an anonymous function as a function parameter
-        - Refactor a callback with anonymous function
+        - An example with a PHP core function
+    - Arrow Functions with PHP
 - Strings
-    - str_pad()
-    - mb_convert_case()
-    - sscanf()
+    - Padding strings: str_pad()
+    - Converting case of a sentences of strings: mb_convert_case()
+    - Parse string: sscanf()
     - sprintf()
     - ctype_alpha()
     - ctype_digit()
@@ -75,7 +74,6 @@ Table of Content
     - trim()
     - yaml-parse()
     - vsprintf()
-    - sscanf()
 - Files
     - lstat()
     - scandir()

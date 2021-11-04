@@ -1,2 +1,0 @@
-## sscanf()
- **TODO**
