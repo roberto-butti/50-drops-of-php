@@ -3,7 +3,7 @@
 ## The reason why
 This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
 
-Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. In my personal case sometimes specially for system, array, string function I see that I used to look the framework documentation or looking for a package in Packagist, but at the end for some cases I discovered that the functionality that I was looking for, was provided directly by the language.
+Using frameworks daily, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. I see that usually I used to look the framework documentation or looking for a package in Packagist for system, array, string functions instead using some core functionalities provided by the language.
 
 While I wrote this book, I also wrote some scripts to better understand the behaviour of the functions. You can find these examples here: https://github.com/roberto-butti/50-drops-of-php in *examples* directory.
 
