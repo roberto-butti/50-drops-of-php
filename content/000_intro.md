@@ -1,14 +1,25 @@
 # Welcome to 50 drops of PHP
 
 ## The reason why
-This book collects some useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
+This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
 
-This book will show you 50 features that are typically underused or underrated.
+Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. In my personal case sometimes specially for system, array, string function I see that I used to look the framework documentation or looking for a package in Packagist, but at the end for some cases I discovered that the functionality that I was looking for, was provided directly by the language.
 
-Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core is lost.
+While I wrote this book, I also wrote some scripts to better understand the behavior of the functions. You can find these examples here: https://github.com/roberto-butti/50-drops-of-php in *examples* directory.
+
+### Continuous release
+
+I was thinking to print this book, but I think that is not so eco-friendly and a book about development could be improved daily in terms of spellchecking and in the content and examples. So, my expectation is adopting the same approach in the software with the CICD, with a continuous release of the book.
+
+So, if you have any feedback, or you want to suggest some corrections, feel free to open an issue here: https://github.com/roberto-butti/50-drops-of-php/issues
+
+### Where to find this book
+
+This book is available for download for free here: https://hifolks.gumroad.com/l/RMdNE?price=0
+
+### Thanks to...
+
+Thanks to Mohamed Said for IBIS project https://github.com/themsaid/ibis for converting markdown into PDF.
 
 
 
-
-
->{quote}  This book aims to discover some nice PHP hints/functions, however isn't a tutorial about writing PHP app.
