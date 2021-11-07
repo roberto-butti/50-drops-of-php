@@ -2,11 +2,14 @@
 
 ![50 drops of PHP book](assets/social_cover-50-drops-of-php-book.png)
 
- This book collects some useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
+This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
 
-This book will show you 50 features that are typically underused or underrated.
+Using frameworks daily, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. I see that usually I used to look the framework documentation or looking for a package in Packagist for system, array, string functions instead using some core functionalities provided by the language.
 
-Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core is lost.
+## Download PDF version for FREE
+
+You can download your PDF version here: https://hifolks.gumroad.com/l/50-drops-of-php?price=0
+
 
 ## Work in progress
 
@@ -14,6 +17,9 @@ Table of Content
 
 - Welcome to 50 drops of PHP
     - The reason why
+        - Continuous release
+        - Where to find this book
+        - Thanks to...
 - System
     - Get used PHP version: phpversion()
     - Display OS information: php_uname()
@@ -62,13 +68,17 @@ Table of Content
     - Padding strings: str_pad()
     - Converting case of a sentences of strings: mb_convert_case()
     - Parse string: sscanf()
-    - sprintf()
-    - ctype_alpha()
-    - ctype_digit()
-    - ctype_lower()
-    - uniqid()
-    - serialize()
-    - unserialize()
+    - Format a string: sprintf()
+        - Padding
+        - Numbers (integers)
+        - Numbers (floats)
+        - Formatting cheat sheet
+    - Validating string, alphabetics: ctype_alpha()
+    - Validating string, digits: ctype_digit()
+    - Validate strings, lower case letters: ctype_lower()
+    - Generate unique string: uniqid()
+    - Store objects or variables: serialize()
+    - Retrieve saved objects or variables: unserialize()
     - gzcompress()
     - gzuncompress()
     - trim()
