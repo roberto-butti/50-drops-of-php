@@ -5,7 +5,7 @@ This book collects 50 useful, unknown, underrated PHP functions or stuff discove
 
 Using frameworks on a daily basis, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. In my personal case sometimes specially for system, array, string function I see that I used to look the framework documentation or looking for a package in Packagist, but at the end for some cases I discovered that the functionality that I was looking for, was provided directly by the language.
 
-While I wrote this book, I also wrote some scripts to better understand the behavior of the functions. You can find these examples here: https://github.com/roberto-butti/50-drops-of-php in *examples* directory.
+While I wrote this book, I also wrote some scripts to better understand the behaviour of the functions. You can find these examples here: https://github.com/roberto-butti/50-drops-of-php in *examples* directory.
 
 ### Continuous release
 
@@ -15,7 +15,7 @@ So, if you have any feedback, or you want to suggest some corrections, feel free
 
 ### Where to find this book
 
-This book is available for download for free here: https://hifolks.gumroad.com/l/RMdNE?price=0
+This book is available for download for free here: https://hifolks.gumroad.com/l/50-drops-of-php?price=0
 
 ### Thanks to...
 
