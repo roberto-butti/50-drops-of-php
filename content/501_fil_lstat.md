@@ -1,4 +1,0 @@
-# Files
-
-## lstat()
- **TODO**

@@ -30,7 +30,7 @@ Flag allowed are:
 | JSON_INVALID_UTF8_SUBSTITUTE | It converts invalid UTF-8 characters to the Unicode characher "replacement character" \0xfffd |
 | JSON_THROW_ON_ERROR          | It throws JsonException if an error occurs                   |
 
-#### Catching errors in parsing
+### Catching errors in parsing
 
 My suggestion is to use JSON_THROW_ON_ERROR in a try catch block:
 
@@ -48,7 +48,7 @@ try {
 
 ```
 
-#### Big integers
+### Big integers
 
 If you have big integers and you want to convert them in a string format instead of the default (float):
 
@@ -58,7 +58,7 @@ $obj = json_decode($string, flags: JSON_BIGINT_AS_STRING);
 var_dump($obj);
 ```
 
-#### More than one flag
+### More than one flag
 
 If you need to specify more than one flag you can use bit mask operator |.
 

@@ -81,11 +81,16 @@ Table of Content
     - Retrieve saved objects or variables: unserialize()
     - Compress content: gzcompress()
     - Uncompress content: gzuncompress()
-    - trim()
-    - yaml-parse()
-    - vsprintf()
+    - Delete characters: trim()
+    - From JSON string to PHP object: json_decode()
+        - Flags
+        - Catching errors in parsing
+        - Big integers
+        - More than one flag
+    - Format a string with an array: vsprintf()
 - Files
-    - lstat()
+    - File information: stat()
+        - Symbolyc link informations
     - scandir()
     - pathinfo()
     - mkdir()
