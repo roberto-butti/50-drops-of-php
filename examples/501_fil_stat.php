@@ -1,7 +1,8 @@
 <?php
 
 $getinfo = function ($filename) {
-    $filestat = lstat($filename);
+    $filestat = stat($filename);
+    var_dump(sprintf("%'07o", $filestat['mode'] & 0xF000));
     return match ($filestat['mode'] & 0xF000) {
         0xC000 => 'socket',
         0xA000 => 'symbolic link',
@@ -16,4 +17,3 @@ $getinfo = function ($filename) {
 
 echo $getinfo(__FILE__) . PHP_EOL;
 echo $getinfo(__DIR__) . PHP_EOL;
-echo $getinfo("./testlink") . PHP_EOL;
