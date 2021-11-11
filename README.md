@@ -90,8 +90,8 @@ Table of Content
     - Format a string with an array: vsprintf()
 - Files
     - File information: stat()
-        - Symbolyc link informations
-    - scandir()
+        - Symbolic link information
+    - Parsing directory: scandir()
     - pathinfo()
     - mkdir()
     - md5_file()
