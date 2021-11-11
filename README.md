@@ -96,6 +96,6 @@ Table of Content
     - Create a directory: mkdir()
         - Permissions
         - Nested directories
-    - md5_file()
-    - glob()
-    - readdir()
+    - The fingerprint of a file: md5_file()
+    - Find files that match a pattern: glob()
+    - Read dir: readdir()
