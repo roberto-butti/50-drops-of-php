@@ -92,8 +92,10 @@ Table of Content
     - File information: stat()
         - Symbolic link information
     - Parsing directory: scandir()
-    - pathinfo()
-    - mkdir()
+    - Split filename infos: pathinfo()
+    - Create a directory: mkdir()
+        - Permissions
+        - Nested directories
     - md5_file()
     - glob()
     - readdir()
