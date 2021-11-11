@@ -21,8 +21,8 @@ The parameter is the filename and it returns an associative array with some info
 I use a lot, mode, uid, gid, size and mtime.
 
 ```php
-    $filestat = stat($filename);
-    var_dump(sprintf("%'07o",$filestat['mode']));
+$filestat = stat($filename);
+var_dump(sprintf("%'07o",$filestat['mode']));
 // 0100644
 ```
 
