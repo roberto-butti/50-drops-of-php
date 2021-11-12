@@ -31,4 +31,6 @@ jobs:
         composer require themsaid/ibis
         mkdir export
     - name: Build Sample eBook
-      run: vendor/bin/ibis build
+      run: |
+        vendor/bin/ibis build
+        vendor/bin/ibis sample
