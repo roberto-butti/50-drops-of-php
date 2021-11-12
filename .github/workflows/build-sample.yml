@@ -1,0 +1,42 @@
+# GithHub Actions Workflow generated with Ghygen
+# Original configuration: https://ghygen.hi-folks.dev?code=9b81e1e3da1cb050602d306067ce1f47
+name: Build pdf via ibis
+on:
+  push:
+    branches:
+      - feature/github-action
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        operating-system: [ubuntu-latest]
+        php-versions: [ '8.0' ]
+        dependency-stability: [ 'prefer-none' ]
+
+    name: P${{ matrix.php-versions }} - L${{ matrix.laravel }} - ${{ matrix.dependency-stability }} - ${{ matrix.operating-system}}
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install PHP versions
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+
+
+    - name: Install IBIS
+      run: |
+        composer require themsaid/ibis
+        mkdir export
+    - name: Build Sample eBook
+      run: |
+        vendor/bin/ibis build
+        vendor/bin/ibis sample
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: sample-pdf-50-drops-of-php
+        path: export/sample-.50-drops-of-php-light.pdf
+        retention-days: 1

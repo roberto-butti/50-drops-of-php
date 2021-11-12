@@ -54,8 +54,7 @@ return [
      * Page ranges to be used with the sample command.
      */
     'sample' => [
-        [1, 6],
-        [39, 41],
+        [1, 7]
 
     ],
 
@@ -63,5 +62,5 @@ return [
      * A notice printed at the final page of a generated sample.
      */
     'sample_notice' => 'This is a sample from "50 drops of PHP" by Roberto Butti. <br>
-                        For more information, <a href="https://hifolks.gumroad.com/l/RMdNE">Click here</a>.',
+                        For more information, and for downloading the full version for free: <a href="https://hifolks.gumroad.com/l/50-drops-of-php">Click here</a>.',
 ];
