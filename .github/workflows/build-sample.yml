@@ -27,6 +27,8 @@ jobs:
 
 
     - name: Install IBIS
-      run: composer global require themsaid/ibis
+      run: |
+        composer global require themsaid/ibis
+        mkdir export
     - name: Build Sample eBook
       run: ibis sample
