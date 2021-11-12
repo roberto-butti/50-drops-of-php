@@ -11,7 +11,7 @@ Using frameworks daily, sometimes the perception of the power of the language an
 You can download your PDF version here: https://hifolks.gumroad.com/l/50-drops-of-php?price=0
 
 
-## Work in progress
+## 50 drops of PHP
 
 Table of Content
 
