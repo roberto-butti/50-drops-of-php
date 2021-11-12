@@ -34,3 +34,9 @@ jobs:
       run: |
         vendor/bin/ibis build
         vendor/bin/ibis sample
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v2
+      with:
+        name: sample-pdf-50-drops-of-php
+        path: export/sample-.50-drops-of-php-light.pdf
+        retention-days: 1
