@@ -4,7 +4,7 @@ name: Build pdf via ibis
 on:
   push:
     branches:
-      - feature/github-action
+      - main
 
 jobs:
   laravel-tests:
