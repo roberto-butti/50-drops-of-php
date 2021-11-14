@@ -1,10 +1,10 @@
 # Array
 
-## Apply function to each array elements: array_map()
-If you want to apply some logic (function) for each element of an array, you may use *array_map()* function.
-You will have as result a new array with the same length with the new elements.
-You can use *array_map()*, the first parameter is the function name and the second parameter is the array to apply the function defined.
-It returns a new array that is the result of the function defined as first parameter.
+## Apply function to each array element: array_map()
+If you want to apply logic (a function) for each element of an array, you may use the *array_map()* function.
+This results in the creation of a new array of the same length with the modified elements.
+The first parameter is the function name and the second parameter is the array to apply the function to.
+A new array is returned with the values modified by the function defined as the first parameter.
 
 
 
