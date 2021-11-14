@@ -1,8 +1,8 @@
 ## Generate and fill a new array: range()
 
-To create an array with a sequence of values you can use *range()* function.
+To create an array with a sequence of values you can use the *range()* function.
 
-If you need to create an array with values 1,2,3,4,5:
+If you need to create an array with the values 1,2,3,4,5:
 
 ```php
 $a = range(1,5);
@@ -36,7 +36,7 @@ Array
 */
 ```
 
-If you use ascii characters instead of integer, you will create arrays with sequence of chars:
+If you use ascii characters instead of integers, you will create an array with the sequence of characters:
 
 ```php
 $a = range('a','e');
@@ -53,7 +53,7 @@ Array
 */
 ```
 
-You can also create descending sequence:
+You can also create in descending sequence:
 
 ```php
 $a = range('e','a');
@@ -70,7 +70,7 @@ Array
 */
 ```
 
-If you are using strings instead of single char, just the first char of the string will be considered:
+If you are using strings instead of single character, just the first character of the string will be considered:
 
 ```php
 $a = range('anaconda','elephant');
@@ -87,13 +87,13 @@ Array
 */
 ```
 
-If you want to generate an array with 'A'..'Z' and 'a'..'z' you can't use *range('A','z')* because range for chars, follow the ascii table. In the middle, between upper case and lower case , in the ascii table you have some chars *[\]^_`* instead probably you could use:
+If you want to generate an array with 'A'..'Z' and 'a'..'z' you can't use *range('A','z')* because range for characters is based on the ascii table. In the middle of the ascii table (between upper case and lower case) there are characters like *[\]^_`*. Instead you could use:
 
 ```php
 $a = array_merge(range('A','Z'), range('a','z'));
 ```
 
-You can also use float. In this case every number of the sequence is the increment (by 1.0) of the previous one:
+You can also generate a range of floats. In this case every number of the sequence is incremented (by 1.0) from the previous value:
 
 ```php
 $a = range(1.5, 4.45);
@@ -110,7 +110,7 @@ Array
 
 ### Step
 
-The third parameters (optional, the default is 1) determines the increment for each elements. For example if you want generate odd number in the range 1..10:
+The third parameter (optional, the default is 1) determines the increment for each element. For example, if you want generate odd numbers in the range of 1..10:
 
 ```php
 $a = range(1,10,2);
@@ -143,4 +143,3 @@ Array
 )
 */
 ```
-

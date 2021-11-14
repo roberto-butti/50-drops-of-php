@@ -1,14 +1,14 @@
-## Get resources usage: getrusage()
+## Get resource usage: getrusage()
 
 The function _getrusage()_ returns resource usage statistics for the calling process, which is the sum of resources used by all threads in the process.
-The parameter $mode is optional. If you call _getrusage()_ with no parameters, it returns resource usage statistics for the calling process, if you call it with _1_ as parameter, _getrusage(1)_, (RUSAGE_CHILDREN) it returns resource usage statistics for all children of the calling process that have terminated and been waited for.
+The parameter $mode is optional. If you call _getrusage()_ with no parameters it returns resource usage statistics for the calling process. If you call it with _1_ as a parameter, _getrusage(1)_, (RUSAGE_CHILDREN) it returns resource usage statistics for all children of the calling process that have terminated and been waited for.
 
 It returns an associative array with "resource name" => "value".
 
 The resources are:
 
 - _ru_utime_: user CPU time used, this is the total amount of time spent executing in user mode, expressed in a timeval structure, *tv_sec* (seconds) and *tv_usec* (microseconds);
-- _ru_stime_: system CPU time used, total amount of time spent executing in kernel mode, expressed in a timeval structure, *tv_sec* (seconds) and *tv_usec* (microseconds);
+- _ru_stime_: system CPU time used, the total amount of time spent executing in kernel mode, expressed in a timeval structure, *tv_sec* (seconds) and *tv_usec* (microseconds);
 - *ru_maxrss*: maximum resident set size, the maximum resident set size used (in kilobytes), with $mode=1, is the resident set size of the largest child;
 - *ru_minflt*: page reclaims (soft page faults), number of page faults serviced without any I/O activity;
 - *ru_majflt*: page faults (hard page faults), number of page faults serviced that required I/O activity;
@@ -47,7 +47,7 @@ The execution shows:
 
 ### The input parameter $mode
 If you call *getrusage()* with *1* as input parameter, it is shown the resource usege of children processes.
-If you call *getrusage(1)* and the process has no child, all values will be 0:
+If you call *getrusage(1)* and the process doesn't have any children, all values will be 0:
 ```php
 // $mode 1
 $resources = getrusage(1);

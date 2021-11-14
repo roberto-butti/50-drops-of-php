@@ -1,7 +1,7 @@
 ## Export object properties as array: get_object_vars()
- The function *get_object_vars()* extracts properties or attributes form an object and create an array with attribute name as keys and attribute values as values.
+ The function *get_object_vars()* extracts properties or attributes from an object and creates an array with attribute names as keys and attribute values as values.
 
-For example if you have an object with 2 properties/attributes
+For example, if you have an object with 2 properties
 
 ```php
 class Person
@@ -28,11 +28,4 @@ Array
 */
 ```
 
-If your code can't access to the property because, for example , the property is *private*, it will be not exported by the function *get_object_vars()* (because the scope). In the example tray to take a look about property *$active* that is declared as *private*, it is initialised as *true* but it is not exported in the *array*.
-
-
-
-
-
-
-
+If the property of an object is *private* the property will not be exported by the function *get_object_vars()* due to the scope. In the example look at the property *$active* that is declared as *private*. It is initialised as *true* but it is not exported in the *array*.

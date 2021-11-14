@@ -1,10 +1,10 @@
 ## Display OS information: php_uname()
-Display some information about the operating system.
+Display information about the operating system.
 
 >{notice} "_uname_" (it means Unix Name) is a historical Unix command to display the name, version and other details about the current machine and the operating system running on it.
 
-With *php_uname()* you can retrieve some operating system information in a PHP script.
-The function as a parameter _mode_, that allows you to define which information you want:
+With *php_uname()* you can retrieve operating system information in a PHP script.
+The function has a parameter _mode_, that allows you to define which information you want returned:
 - s : operating system name;
 - n : the host name;
 - r : the release name;

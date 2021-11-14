@@ -1,15 +1,15 @@
 ## Get temp file name: tempnam()
 
-If you need to generate a unique file name for temporary file, you can use *tempnam()* function.
+If you need to generate a unique filename for temporary file, you can use *tempnam()* function.
 The *tempnam()* function has two parameters:
 - *the directory*: the directory where you want to store the file. You can use sys_get_temp_dir() for defining the temp directory;
 - *the prefix*: for example if you want to define the first part of the filname.
-The tempnam() function returns the absolute path. For example:
+The tempnam() function returns an absolute path. For example:
 ```php
 $tmpfname = tempnam(sys_get_temp_dir(), "MY-");
 // it returns something like: "/private/tmp/MY-awBP4E"
 ```
-Probasbly you want to add an extension...
+If you want to add an extension:
 ```php
 $extension = "txt";
 $tmpFilename = tempnam(sys_get_temp_dir(), "MY-");
