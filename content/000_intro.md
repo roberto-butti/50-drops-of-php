@@ -25,3 +25,11 @@ Thanks to Mohamed Said for IBIS project https://github.com/themsaid/ibis for con
 
 Thanks to Russell Heimlich for helping me correct typos, grammar, and clarification changes.
 
+### License
+"50 drops of PHP" (c) by Roberto Butti
+
+"50 drops of PHP" is licensed under a
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.

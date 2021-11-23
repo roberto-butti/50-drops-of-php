@@ -10,6 +10,14 @@ Using frameworks daily, sometimes the perception of the power of the language an
 
 You can download your PDF version here: https://hifolks.gumroad.com/l/50-drops-of-php?price=0
 
+## License
+"50 drops of PHP" (c) by Roberto Butti
+
+"50 drops of PHP" is licensed under a
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-nc-sa/4.0/>.
 
 ## 50 drops of PHP
 
