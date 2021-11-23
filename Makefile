@@ -23,8 +23,11 @@ buildpdf: ${OUTPUT} ## build PDF file
 	@echo "Going to build" ${OUTPUT}
 
 ${OUTPUT}: ${SRCS} ibis.php assets/*.html
-	@echo "Creating PDF..."
+	@echo "Creating PDF (light)..."
 	../../OPEN-SOURCE/ibis/ibis build
+	@echo "Creating PDF (dark)..."
+	../../OPEN-SOURCE/ibis/ibis build dark
+
 
 buildsample: ## build sample PDF file
 	@echo "Creating PDF sample..."

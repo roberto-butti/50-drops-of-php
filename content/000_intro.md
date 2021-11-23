@@ -11,7 +11,9 @@ While I wrote this book, I also wrote some scripts to better understand the beha
 
 I was thinking to print this book, but I think that is not so eco-friendly and a book about development could be improved daily in terms of spellchecking and in the content and examples. So, my expectation is adopting the same approach in the software with the CI/CD, with a continuous release of the book.
 
-This is the release 1.0.1 (14 November 2021): "Fix typos, grammar, and clarification edits".
+Releases:
+- (current) release 1.0.2 (23 November 2021): "Fix license and fonts";
+- release 1.0.1 (14 November 2021): "Fix typos, grammar, and clarification edits".
 
 So, if you have any feedback, or you want to suggest some corrections, feel free to open an issue here: https://github.com/roberto-butti/50-drops-of-php/issues
 
