@@ -28,7 +28,7 @@ Table of Content
         - Continuous release
         - Where to find this book
         - Thanks to...
-- System
+        - License
     - Get used PHP version: phpversion()
     - Display OS information: php_uname()
     - Get memory usage in bytes: memory_get_usage()
@@ -43,7 +43,7 @@ Table of Content
         - Comparing without operator
         - Comparing with operator
     - Retrieve the current Process Identifier: getmypid()
-    - Get resources usage: getrusage()
+    - Get resource usage: getrusage()
         - The input parameter $mode
     - Return current UNIX timestamp: microtime()
     - Why you need to avoid to use microtime() to measure the time
@@ -51,7 +51,7 @@ Table of Content
     - Get temporary directory: sys_get_temp_dir()
     - Get temp file name: tempnam()
 - Array
-    - Apply function to each array elements: array_map()
+    - Apply function to each array element: array_map()
     - A string from an array:  join()
     - Check if a key exists in the array:  key_exists()
     - Check if an element is included in the array:  in_array()
@@ -59,14 +59,14 @@ Table of Content
         - Case Sensitive
     - Merge two arrays: array_merge()
         - Key collision: array merge of arrays with numeric keys
-        - Key collision: array merge of arrays with strings keys
+        - Key collision: array merge of arrays with string keys
     - Generate and fill a new array: range()
         - Step
     - Creating array from variables: compact()
 - Variables, Constants
     - Get variable type: gettype()
     - Portable directory separator: DIRECTORY_SEPARATOR
-    - Portable end of line: PHP_EOL()
+    - Portable end of line: PHP_EOL
     - Export object properties as array: get_object_vars()
 - Functions
     - Anonymous functions
@@ -107,3 +107,27 @@ Table of Content
     - The fingerprint of a file: md5_file()
     - Find files that match a pattern: glob()
     - Read dir: readdir()
+- Appendix
+    - Cheat sheet for PHP array functions
+        - Append arrays
+        - Joins elements into string
+        - A section of an array
+        - Find the first occurrence
+        - Find the last occurrence
+        - A function for each element
+        - All elements match an expression
+        - At least 1 element matches an expression
+        - Filter elements
+        - Apply a function for each element
+        - Flatten array
+        - Change some elements
+        - Apply a function with all elements
+        - Last element
+        - Prepends an element
+        - Add element at the end
+        - Reverse an array
+        - Sorting
+        - Remove/replacing/adding elements
+        - Stringify and array
+        - Length
+        - Is array?
