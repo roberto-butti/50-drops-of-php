@@ -27,7 +27,7 @@ return [
      * Document Dimensions.
      */
     'document' => [
-        'format' => [210, 297],
+        'format' => [152, 228],
         'margin_left' => 27,
         'margin_right' => 27,
         'margin_bottom' => 14,
@@ -48,7 +48,7 @@ return [
      */
     'cover' => [
         'position' => 'position: absolute; left:0; right: 0; top: -.2; bottom: 0;',
-        'dimensions' => 'width: 210mm; height: 297mm; margin: 0;',
+        'dimensions' => 'width: 152mm; height: 228mm; margin: 0;',
         'image' => 'cover.png',
     ],
 
