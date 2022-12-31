@@ -3,7 +3,7 @@
 ## Padding strings: str_pad()
  With *str_pad()* function you can pad (fill with some characters) a string.
 
-To pad a string with spaces until it reaches the lenght of ten chars:
+To pad a string with spaces until it reaches the length of ten chars:
 
 ```php
 echo str_pad("Hello", 10) . "-";
@@ -26,12 +26,9 @@ echo str_pad("Hello", 10, "+*");
 // Hello+*+*+
 ```
 
-Yuo can define the "direction" of the pad with STR_PAD_RIGHT (the default), STR_PAD_LEFT, STR_PAD_BOTH:
+You can define the "direction" of the pad with STR_PAD_RIGHT (the default), STR_PAD_LEFT, STR_PAD_BOTH:
 
 ```php
 echo str_pad("Hello", 10, "+", STR_PAD_BOTH);
 // ++Hello+++
 ```
-
-
-
