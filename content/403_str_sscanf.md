@@ -1,5 +1,5 @@
 ## Parse string: sscanf()
- With *sscanf()* function you can parse a string following a well know pattern.
+ With *sscanf()* function you can parse a string following a well known pattern.
 
 For example ISBN code , is the code identifier for books.
 
@@ -20,7 +20,7 @@ An example is : "978-0-596-52068-7"
 The function *sscanf()* has at least 2 parameters:
 
 - first one is the string to parse ("978-0-596-52068-7")
-- second one is the pattern, composed with some placeholders. For example wirth %d you can decalre a digit. In the case of isbn you can specify: "%d-%d-%d-%d-%d" that it means : a number followed by - char, another number followed by - char, another number followed by - char, another number followed by - char, another number followed by - char.
+- second one is the pattern, composed with some placeholders. For example with %d you can decalre a digit. In the case of isbn you can specify: "%d-%d-%d-%d-%d" that it means : a number followed by - char, another number followed by - char, another number followed by - char, another number followed by - char, another number followed by - char.
 
 ```php
 $isbn = "978-0-596-52068-7";
@@ -32,4 +32,3 @@ echo "Publisher: " . $publisher . PHP_EOL;
 echo "Title: " . $title . PHP_EOL;
 echo "Check digit: " . $check_digit . PHP_EOL;
 ```
-
