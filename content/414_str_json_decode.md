@@ -16,7 +16,7 @@ if you want to obtain an associative array:
 ```php
 $obj = json_decode($string, true);
 ```
-With the second parameter you can manage the type of the output, *false* you want an object, *true* you want an associative array.
+With the second parameter you can manage the type of the output, *false* if you want an object, *true* if you want an associative array.
 ### Flags
 You have a third parameter *flags*.
 With Flags parameter you can control some behavior of the parsing process.
@@ -73,4 +73,3 @@ try {
 }
 echo sprintf("Name: %s , age %d" . PHP_EOL, $arr["name"], $arr["age"]);
 ```
-

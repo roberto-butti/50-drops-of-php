@@ -14,7 +14,7 @@ For example if the directory already exists, it returns *false*.
 
 ### Permissions
 
-You can define also permissions.
+You can also define permissions.
 
 For example, if you want to create a directory with read, write and execute permission for the **u**ser, the **g**roup, and the **o**thers you can use 777:
 
@@ -23,7 +23,7 @@ $return = mkdir("./testdir", 0777);
 var_dump($return);
 ```
 
-If you notice that the directory created has no right permission my suggestion is to che if you have some *umask* configuration.
+If you notice that the directory created has no right permission my suggestion is to check if you have some *umask* configuration.
 
 For example, a workaround is to unset the *umask* in order to avoid that it interferes with permissions:
 
@@ -36,13 +36,10 @@ umask($old);
 
 ### Nested directories
 
-If you want to create nested directories (like *mkdir -p* in the shell), yuo can use the third parameters, a *boolean* that indicates that you want nested directory:
+If you want to create nested directories (like *mkdir -p* in the shell), you can use the third parameter, a *boolean* that indicates that you want nested directory:
 
 ```php
 $return = mkdir("./testdir/testdir1/testdir2/testdir3", 0777, true);
 var_dump($return);
 umask($old);
 ```
-
-
-
