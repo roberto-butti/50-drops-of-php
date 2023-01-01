@@ -8,7 +8,7 @@ var_dump($files);
 
 A directory name (string) as input and you will get an array of string: filenames, directory names, including also special directory like "." and "..".
 
-You can control the sorting with 2 constants. The default is an ascending sorting (alphabetical), with *SCANDIR_SORT_DESCENDING* you can obtaining string with a descending order:
+You can control the sorting with 2 constants. The default is an ascending sorting (alphabetical), with *SCANDIR_SORT_DESCENDING* you can obtain string with a descending order:
 
 ```php
 $files = scandir(__DIR__, SCANDIR_SORT_DESCENDING);
@@ -29,9 +29,5 @@ So my suggestion is dropping 2 elements by value. I have in mind 2 ways, the fir
 ```php
 $files = array_diff(scandir(__DIR__), [".", ".."];
 var_dump($files);
-                    
+
 ```
-
-
-
-aaa

@@ -35,7 +35,7 @@ In this case the *1$* means "take the first parameter". The first parameter is *
 
 If you need to pad a placeholder, you can define how many characters in total the replaced value needs to be long.
 
-For example if you want to align some replace values, you can use*%10s*. This is a placeholder for a string variable that will be padded until it will be 10 chars long:
+For example if you want to align some replace values, you can use *%10s*. This is a placeholder for a string variable that will be padded until it will be 10 chars long:
 
 ```php
 $name = 'John';
@@ -67,7 +67,7 @@ echo sprintf("*%'_-25s*", "Left with underscores") . PHP_EOL;
 */
 ```
 
-If your result string it is longer than the number of total padding characters, it will be not truncate by default.
+If your result string is longer than the number of total padding characters, it will not be truncated by default.
 
 For example with the string "Something", if you are using %2s, the padding will be ignored.
 
@@ -100,7 +100,7 @@ Align right with a custom padding char, for example with 0s:
 ```php
 echo sprintf("*%'08d*", 512) . PHP_EOL; // *00000512*
 ```
-If the padding values it is lower than total amount of chars, it is ignored:
+If the padding values is lower than total amount of chars, it is ignored:
 ```php
 echo sprintf("*%2d*", 512) . PHP_EOL; // *512*
 ```
@@ -115,7 +115,7 @@ echo sprintf('*%2$d*', 512 , 1024) . PHP_EOL; // *1024*
 
 ### Numbers (floats)
 
-If you are working with floats, probably you want also to control the number of decimal digits.
+If you are working with floats, you probably also want to control the number of decimal digits.
 Floats with decimals (6 decimal digits by default):
 ```php
 echo sprintf('*%f*', 1.25) . PHP_EOL; // *1.250000*
@@ -153,4 +153,3 @@ echo sprintf("*%'010.3f*", 1.2519) . PHP_EOL; // *000001.252*
 | Float with decimals                                          |        | %f          |
 | Float with 3 decimals with 5 digits in total (counting also decimal separator) | 5.3    | %5.3f       |
 | Float with 3 decimals prefixed with 0 for reaching 10 digits | '010.3 | %'010.3f    |
-

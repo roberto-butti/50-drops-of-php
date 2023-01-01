@@ -16,7 +16,7 @@ For example, modules are:
 The availability of these modules depend on how the PHP engine was compiled and the configuration of the PHP installation (php.ini).
 
 To know which modules are available, the _get_loaded_extensions()_ function exists.
-It returns and array with the names of the modules:
+It returns an array with the names of the modules:
 ```php
 $extensions = get_loaded_extensions();
 foreach ($extensions as $key => $extension) {

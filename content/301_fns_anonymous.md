@@ -14,7 +14,7 @@ echo "Calling sum(5, 3) function: " . sum(5, 3)  . PHP_EOL;
 echo "Calling sum(1, 2) function: " . sum(1, 2)  . PHP_EOL;
 ```
 
-In this example with the "classic declaration of fuction", you have the keyword *function*, then the name of the function (in this case *sum*) and then the parameters (in this case *$x* and *$y*). The name is importante because, later, when you need to "call" the function you need to use the name (for example *sum(5,3)*).
+In this example with the "classic declaration of function", you have the keyword *function*, then the name of the function (in this case *sum*) and then the parameters (in this case *$x* and *$y*). The name is important because, later, when you need to "call" the function you need to use the name (for example *sum(5,3)*).
 
 Anonymous functions are functions without a name. You can declare in this way:
 
@@ -57,7 +57,7 @@ echo "APPLY sum : " . apply($sum) . PHP_EOL;
 echo "APPLY mul : " . apply($mul) . PHP_EOL;
 ```
 
-If you declare your *sum* function as anonymous you can assign it to a variable *$sum* and you can passthat function to the *apply* function.
+If you declare your *sum* function as anonymous you can assign it to a variable *$sum* and you can pass that function to the *apply* function.
 
 ### An example with a PHP core function
 
@@ -83,6 +83,3 @@ $b = array_map(
 );
 print_r($b); // [2,4,6,8,10]
 ```
-
-
-
