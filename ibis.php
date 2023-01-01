@@ -53,6 +53,11 @@ return [
     ],
 
     /**
+     * default commonmark
+     */
+    'configure_commonmark' => [],
+
+    /**
      * Page ranges to be used with the sample command.
      */
     'sample' => [

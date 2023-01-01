@@ -9,7 +9,7 @@ help:
 
 all: build ## build Html pages and PDF
 
-build: buildhtml buildpdf
+build: buildpdf
 
 buildhtml: ${HTML} ## build html pages
 	@echo "Going to build" ${HTML}
@@ -24,14 +24,14 @@ buildpdf: ${OUTPUT} ## build PDF file
 
 ${OUTPUT}: ${SRCS} ibis.php assets/*.html
 	@echo "Creating PDF (light)..."
-	../../OPEN-SOURCE/ibis/ibis build
+	../../OPENSOURCE/ibis/ibis build
 	@echo "Creating PDF (dark)..."
-	../../OPEN-SOURCE/ibis/ibis build dark
+	../../OPENSOURCE/ibis/ibis build dark
 
 
 buildsample: ## build sample PDF file
 	@echo "Creating PDF sample..."
-	../../OPEN-SOURCE/ibis/ibis sample
+	../../OPENSOURCE/ibis/ibis sample
 
 clean:
 	@echo "Cleaning up..."
