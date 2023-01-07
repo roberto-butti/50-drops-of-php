@@ -2,11 +2,11 @@
 
 ![50 drops of PHP book](assets/social_cover-50-drops-of-php-book.png)
 
-This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, learned during the PHP daily use.
+This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, and learned during PHP's daily use.
 
-Using frameworks daily, sometimes the perception of the power of the language and of the basic functionalities provided by the PHP core could be lost. I see that usually I used to look the framework documentation or looking for a package in Packagist for system, array, string functions instead using some core functionalities provided by the language.
+Using frameworks daily, sometimes the perception of the power of the language and the basic functionalities provided by the PHP core could be lost. I see that usually, I used to look at the framework documentation or look for a package in Packagist for the system, array, and string functions instead of using some core functionalities provided by the language.
 
-## Download PDF version for FREE
+## Download the PDF version for FREE
 
 You can download your PDF version here: https://hifolks.gumroad.com/l/50-drops-of-php?price=0
 
