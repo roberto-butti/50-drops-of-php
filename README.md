@@ -1,6 +1,7 @@
+> **Update!!!** The book "50 drops of PHP" is now considered obsolete. A more recent and comprehensive version is available for readers. You can access it here: [Some Drops of PHP](https://drops-of-php.hi-folks.dev/). Unlike the previous PDF version, this updated edition is conveniently accessible through your browser, providing a seamless reading experience. Additionally, it has been thoroughly reviewed and enriched with detailed explanations for a broader array of PHP functions, ensuring you have the most up-to-date and insightful resource at your fingertips. "Some Drops of PHP" is still open source and available for everyone in this repository: https://github.com/roberto-butti/some-drops-of-php 
+
 # The Book: 50 drops of PHP
 
-![50 drops of PHP book](assets/social_cover-50-drops-of-php-book.png)
 
 This book collects 50 useful, unknown, underrated PHP functions or stuff discovered, used, and learned during PHP's daily use.
 
